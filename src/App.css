@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+#content {
+    /* background: black; */
+    color: #fff;
+    width: 100%;
+    padding: 4vh 0;
+    /* height: 86.5vh; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Home.js */
+#titleZone {
+    padding: 0 2rem;
+    padding-bottom: 3vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#printZone {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 85%;
+    height: 50vh;
+    border: 2px solid #61DBFB;
+    border-radius: 15px;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#printZone ol {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+    padding: 0;
+    margin: 0;
+}
+#printZone ol li {
+    width: 90%;
+    padding: 1rem 2rem;
+    margin: .85rem auto;
+    display: flex;
+    justify-content: space-between;
+    background: #61DBFB;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+#printZone ol li a {
+    font-weight: 600;
+}
+#submitZone {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#subject1 {
+    padding: 2rem 2.5rem;
+    padding-bottom: 1rem;
+}
+#textZone {
+    display: flex;
+    padding: 0 2.5rem;
+}
+#textZone input:nth-child(1){
+    width: 70%;
+    height: 10vh;
+    padding-left: 1.5rem;
+    border: 0;
+    background: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 15px 0 0 15px;
+}
+#textZone input:nth-child(2){
+    width: 30%;
+    background: #61DBFB;
+    color: #fff;
+    outline: 0;
+    border: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 0 15px 15px 0;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* about */
+#root h2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    padding-bottom: 1rem;
+    color: #fff;
+    font-size: 3rem;
+}
+.imgBox {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 6rem;
+}
+.imgBox img {
+    width: 50%;
+    border-radius: 5px;
+}
+.imgBox .imgBoxRight {
+    width: 50%;
+}
+.imgBox .imgBoxRight h3 {
+    font-size: 2rem;
+    color: #61DBFB;
+}
+.imgBox .imgBoxRight p {
+    font-size: 14px;
+    line-height: 2em;
+    color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ui.styled.accordion, .ui.styled.accordion .accordion {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: start;
+}
+#root .ui.styled.accordion {
+    width: 90%;
+    margin-bottom: 6rem;
+}
+#root .title, #root .content {
+    line-height: 7vh;
+    font-size: 1.25rem;
+    /* height: 10vh; */
+    padding-left: 3rem;
+}
+#root .content {
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 0;
+}
+#root .content p {
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+    text-align: justify;
+}
+.ui.styled.accordion .accordion .active.title, .ui.styled.accordion .accordion .title:hover, .ui.styled.accordion .active.title, .ui.styled.accordion .title:hover {
+    color: #61DBFB !important;
 }
