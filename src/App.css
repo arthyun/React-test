@@ -8,14 +8,15 @@
 
 /* Home.js */
 #titleZone {
-    padding: 0 2rem;
+    width: 95%;
+    margin: 0 auto;
     padding-bottom: 3vh;
 }
 
 #printZone {
     display: flex;
     flex-direction: column-reverse;
-    width: 85%;
+    width: 95%;
     height: 50vh;
     border: 2px solid #61DBFB;
     border-radius: 15px;
@@ -34,7 +35,7 @@
     margin: 0;
 }
 #printZone ol li {
-    width: 90%;
+    width: 97%;
     padding: 1rem 2rem;
     margin: .85rem auto;
     display: flex;
@@ -50,15 +51,16 @@
 #submitZone {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
 }
 #subject1 {
-    padding: 2rem 2.5rem;
+    padding: 2rem 0rem 1rem;
     padding-bottom: 1rem;
 }
 #textZone {
     display: flex;
-    padding: 0 2.5rem;
+    /* padding: 0 2.5rem; */
 }
 #textZone input:nth-child(1){
     width: 70%;
